@@ -69,7 +69,7 @@ function TTable({trades,onEdit,onDel}){
         return(
         <tr key={t.id} className="trade-row" style={{borderBottom:"1px solid #f0f4f8"}}>
           <td style={{padding:"8px"}}>{t.date}</td>
-          <td style={{padding:"8px",color:"#fff",fontWeight:500}}>{t.ticker}</td>
+          <td style={{padding:"8px",color:"#1a202c",fontWeight:700}}>{t.ticker}</td>
           <td style={{padding:"8px"}}><span className="badge" style={{background:"#e2e8f0",color:"#4a7cff"}}>{t.setup}</span></td>
           <td style={{padding:"8px"}}><span className="badge" style={{background:t.direction==="LONG"?"#00291a":"#290014",color:t.direction==="LONG"?"#00e5a0":"#ff4d6d"}}>{t.direction}</span></td>
           <td style={{padding:"8px",color:"#1a202c"}}>${parseFloat(t.entry).toFixed(2)}</td>
